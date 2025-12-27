@@ -1,0 +1,14 @@
+com\rogerio\pedidos\service\OrderService.class
+com\rogerio\pedidos\service\ProductService.class
+com\rogerio\pedidos\config\SecurityConfig.class
+com\rogerio\pedidos\repository\OrderRepository.class
+com\rogerio\pedidos\repository\UserRepository.class
+com\rogerio\pedidos\controller\ProductController.class
+com\rogerio\pedidos\PedidosApplication.class
+com\rogerio\pedidos\controller\UserController.class
+com\rogerio\pedidos\service\UserService.class
+com\rogerio\pedidos\controller\OrderController.class
+com\rogerio\pedidos\repository\ProductRepository.class
+com\rogerio\pedidos\model\Order.class
+com\rogerio\pedidos\model\Product.class
+com\rogerio\pedidos\model\User.class

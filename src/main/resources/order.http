@@ -1,0 +1,47 @@
+# Variáveis
+@host = http://localhost:8080
+
+### Listar todos os pedidos
+GET {{host}}/orders
+Accept: application/json
+
+### Obter pedido por id
+GET {{host}}/orders/1
+Accept: application/json
+
+### Criar um novo pedido (substitua user_id e product_ids conforme necessário)
+POST {{host}}/orders
+Content-Type: application/json
+
+{
+  "user": {
+    "id": 1
+  },
+  "products": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    }
+  ]
+}
+
+### Criar pedido com apenas um produto
+POST {{host}}/orders
+Content-Type: application/json
+
+{
+  "user": {
+    "id": 1
+  },
+  "products": [
+    {
+      "id": 1
+    }
+  ]
+}
+
+### Tentar deletar um pedido (retorna 405 Method Not Allowed)
+DELETE {{host}}/orders/1
+

@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Notebook Dell XPS 15",
+    "price": 3500.0
+  },
+  {
+    "id": 2,
+    "name": "Mouse Logitech",
+    "price": 89.99
+  }
+]

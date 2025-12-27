@@ -1,0 +1,33 @@
+# Variáveis
+@host = http://localhost:8080
+
+### Listar todos os usuários
+GET {{host}}/users
+Accept: application/json
+
+### Obter usuário por id (substitua 1 pelo id desejado)
+GET {{host}}/users/1
+Accept: application/json
+
+### Criar um usuário
+POST {{host}}/users
+Content-Type: application/json
+
+{
+  "name": "João Silva",
+  "email": "joao.silva@example.com"
+}
+
+### Atualizar um usuário (substitua 1 pelo id desejado)
+PUT {{host}}/users/1
+Content-Type: application/json
+
+{
+  "name": "João da Silva Atualizado",
+  "email": "joao.atualizado@example.com"
+}
+
+### Deletar um usuário (substitua 1 pelo id desejado)
+DELETE {{host}}/users/1
+
+

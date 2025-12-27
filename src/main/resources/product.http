@@ -1,0 +1,42 @@
+# Variáveis
+@host = http://localhost:8080
+
+### Listar todos os produtos
+GET {{host}}/products
+Accept: application/json
+
+### Obter produto por id
+GET {{host}}/products/1
+Accept: application/json
+
+### Criar um novo produto
+POST {{host}}/products
+Content-Type: application/json
+
+{
+  "name": "Notebook Dell",
+  "price": 3500.00
+}
+
+### Criar outro produto
+POST {{host}}/products
+Content-Type: application/json
+
+{
+  "name": "Mouse Logitech",
+  "price": 89.99
+}
+
+### Atualizar apenas o nome do produto
+PUT {{host}}/products/1
+Content-Type: application/json
+
+{
+  "name": "Notebook Dell XPS 15"
+}
+
+### Deletar um produto (sucesso se não estiver associado a nenhum pedido)
+DELETE {{host}}/products/
+
+### Deletar um produto associado a um pedido (retorna 405 Method Not Allowed)
+DELETE {{host}}/products/1
